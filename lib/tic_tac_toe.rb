@@ -96,10 +96,10 @@ end
 
 #----------------02_play_spec------------------
 def play(board)
-			until won?(board)
+			until over?(board)
 				turn(board)
 			end
-			if won?(board)			
+			if won?(board)
 				puts "Congratulations, #{winner}!"
 			elsif draw?(board)
 				puts "Cat's Game!"
