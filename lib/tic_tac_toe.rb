@@ -101,4 +101,5 @@ def play(board)
 				turn(board)
 				counter+=1
 			end
+			over?(board)
 end
