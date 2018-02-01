@@ -96,10 +96,12 @@ end
 
 #----------------02_play_spec------------------
 def play(board)
-			counter = 0
-			until counter == 9
+			until won?(board)
 				turn(board)
-				counter+=1
-				over?(board)
+			end
+			if won?(board)			
+				puts "Congratulations, #{winner}!"
+			elsif draw?(board)
+				puts "Cat's Game!"
 			end
 end
