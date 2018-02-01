@@ -100,6 +100,6 @@ def play(board)
 			until counter == 9
 				turn(board)
 				counter+=1
+				over?(board)
 			end
-			over?(board)
 end
