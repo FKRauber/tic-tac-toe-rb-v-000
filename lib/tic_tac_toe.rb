@@ -45,7 +45,7 @@ def turn(board)
 				move(board, index, current_player(board))
 			else
         puts "Invalid move, please enter 1-9:"
-				#turn(board)
+				turn(board)
 			end
 end
 
